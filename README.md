@@ -1,16 +1,87 @@
-# React + Vite
+# Pokédex
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A Pokémon Pokédex built with React and the PokéAPI. The application allows users to browse, search, view detailed information, and manage their favorite Pokémon.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Browse Pokémon with pagination
+- Search Pokémon by name
+- View detailed Pokémon information
+- Add and remove Pokémon from favorites
+- Persist favorites using `localStorage`
+- Responsive design for desktop and mobile
+- Client-side navigation with React Router
+- Loading and error states
 
-## React Compiler
+## Technologies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- JavaScript
+- React Router
+- CSS
+- PokéAPI
+- Vite
 
-## Expanding the Oxlint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+src/
+├── components/
+│ ├── NavBar.jsx
+│ └── PokemonCard.jsx
+├── contexts/
+│ └── FavoritesContext.jsx
+├── css/
+├── pages/
+│ ├── Favorites.jsx
+│ ├── Home.jsx
+│ └── PokemonDetails.jsx
+├── services/
+│ └── api.js
+├── App.jsx
+└── main.jsx
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone <https://github.com/Diogo1191/project-pokedex.git>
+```
+
+Navigate to the project directory:
+
+```bash
+cd pokedex-react
+```
+
+Install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will then be available at the local address provided by Vite.
+
+## API
+
+This project uses the [PokéAPI](https://pokeapi.co/) to retrieve Pokémon data.
+
+## Future Improvements
+
+- Add sorting and filtering by Pokémon type
+- Improve accessibility
+- Add automated tests
+- Deploy the application online
