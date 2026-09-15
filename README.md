@@ -52,7 +52,7 @@ src/
 Clone the repository:
 
 ```bash
-git clone <https://github.com/Diogo1191/project-pokedex.git>
+git clone https://github.com/Diogo1191/project-pokedex.git
 ```
 
 Navigate to the project directory:
